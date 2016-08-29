@@ -11,5 +11,5 @@ for word in inputText.split():
         inputDict[word] += 1
 
 for item in inputDict:
-    print("{} : {}".format(item, inputDict[item]))
+    print("{:{}} : {}".format(item, len(max(inputDict, key=len)), inputDict[item]))
 
